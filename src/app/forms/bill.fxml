@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.forms.Bill">
+   <children>
+      <Label fx:id="orderIdLabel" layoutX="14.0" layoutY="41.0" text="Số hoá đơn:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="dishTable" focusTraversable="false" layoutX="14.0" layoutY="68.0" prefHeight="312.0" prefWidth="270.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="preSumTextField" layoutX="14.0" layoutY="391.0" text="Tạm tính:" />
+      <Label fx:id="promotionTextField" layoutX="149.0" layoutY="391.0" text="Giảm giá:" />
+      <Label fx:id="sumTextField" layoutX="14.0" layoutY="424.0" text="Tổng:" />
+      <Label fx:id="payMoneyTextField" layoutX="149.0" layoutY="424.0" text="Khách trả:" />
+      <Label fx:id="restMoneyTextField" layoutX="14.0" layoutY="453.0" text="Trả lại:" />
+      <Label fx:id="timeLabel" layoutX="85.0" layoutY="487.0" text="2020-03-04 12:00:00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

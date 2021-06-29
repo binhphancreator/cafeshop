@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="683.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.forms.AdminHome">
+   <children>
+      <MenuBar VBox.vgrow="NEVER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Quản lý">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onOpenSeller" text="Trung tâm bán hàng" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#onOpenDishManager" text="Thực đơn" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#onOpenStaffManager" text="Quản lý nhân viên" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Thống kê">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onOpenRevenueStatistics" text="Doanh thu" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Người dùng">
+              <items>
+                 <MenuItem mnemonicParsing="false" onAction="#onShowPersonalInfo" text="Thông tin cá nhân" />
+                 <MenuItem mnemonicParsing="false" onAction="#onLogOut" text="Đăng xuất" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</VBox>
